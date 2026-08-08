@@ -1,0 +1,27 @@
+# ============================================================
+# requirements.txt — AI Image Emotion Recognition System
+# Install with:  pip install -r requirements.txt
+# ============================================================
+
+# ── Web UI ────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Computer Vision ───────────────────────────────────────────
+opencv-python-headless>=4.9.0.80    # cv2 without GUI dependencies (server-safe)
+Pillow>=10.3.0                       # PIL.Image used as bridge between cv2 & HF
+
+# ── Deep Learning ─────────────────────────────────────────────
+transformers>=4.41.0                 # pipeline, AutoImageProcessor, AutoModel
+torch>=2.3.0                         # PyTorch backend for Transformers
+torchvision>=0.18.0                  # image utilities used by ViT
+
+# ── Database ──────────────────────────────────────────────────
+SQLAlchemy>=2.0.30
+PyMySQL>=1.1.1                       # pure-Python MySQL driver (no C compiler needed)
+
+# ── Data ──────────────────────────────────────────────────────
+numpy>=1.26.4
+pandas>=2.2.2
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv>=1.0.1                 # optional: load DB credentials from .env file
